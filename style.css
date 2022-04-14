@@ -470,8 +470,71 @@ hr{
 /* Reviews*/
 .reviews{
     padding: 0 110px;
+    position: relative;
 }
 
 .reviews_item{
+    padding-left: 205px;
+    position: relative;
+}
 
+.reviews_photo{
+    border: 2px solid #95e1d3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.reviews_text{
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 300;
+    color: #999;
+    margin-bottom: 15px;
+}
+
+.reviews_author{
+    font-size: 24px;
+    color: #333;
+    font-family: "Kaushan Script", cursive;
+}
+
+.reviews_author:before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 3px;
+    margin-right: 10px;
+    background-color: #f38181;
+}
+
+.reviews_btn{
+    font-size: 0;
+    color: transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.reviews_btn:after{
+    content: "";
+    display: block;
+    height: 16px;
+    width: 16px;
+    border-top: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    
+}
+
+.reviews_btn--prev{
+    left: 0;
+    transform: rotate(-135deg);
+}
+
+.reviews_btn--next{
+    right: 0;
+    transform: rotate(45deg);
 }
