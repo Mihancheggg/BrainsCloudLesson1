@@ -211,12 +211,19 @@ hr{
     background: url(../BrainsCloudLesson1/assets/devices-bg.jpg) center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
+    background-size: cover;
     padding-bottom: 0;
     margin-bottom: 40px;
 }
 
 .section--gray{
     background-color: #f8f8f8;
+}
+
+.section--clients{
+    background: url(../BrainsCloudLesson1/assets/clients-bg.jpg) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 .section_header{
@@ -499,7 +506,7 @@ hr{
 }
 
 .reviews_item{
-    padding-left: 205px;
+    padding-left: 255px;
     position: relative;
 }
 
@@ -509,6 +516,7 @@ hr{
     top: 0;
     left: 0;
     z-index: 1;
+    border-radius: 50%;
 }
 
 .reviews_text{
@@ -620,16 +628,96 @@ hr{
     opacity: .1;
 }
 
+.works_item:hover .works_info{
+    opacity: 1;
+}
+
 .works_image{
     transition: opacity .2s linear;
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .works_info{
     position: absolute;
+    text-align: center;
+    padding: 0 15px;
+    color: #fff;
     width: 100%;
     top: 50%;
     left: 0;
     z-index: 1;
     transform: translate3d(0, -50%, 0);
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+
+
+
+.works_title{
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.works_text{
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/*Clients*/
+
+.clients{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+.clients_item{
+    width: 50%;
+    padding: 0 45px 0 175px;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.clients_photo{
+    top: 0;
+    left: 40px;
+    z-index: 1;
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}
+
+.clients_content{
+    color: #333;
+}
+
+.clients_name{
+    margin-bottom: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.clients_prof{
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.clients_text{
+    color: #999;
+    font-size: 15px;
+}
+
+.clients_text:before{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 15px 0;
 }
