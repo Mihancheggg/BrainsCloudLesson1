@@ -227,7 +227,10 @@ hr{
 }
 
 .section--map{
+    padding: 40px 0;
     background: url(../BrainsCloudLesson1/assets/map-bg.jpg) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 .section_header{
@@ -812,3 +815,35 @@ hr{
 .blog_stat_item i{
     color: #95e1d3;
 }
+
+/*Map*/
+
+.map{
+    text-align: center;
+}
+
+.map_title{
+    font-size: 24px;
+    font-weight: 700;
+    color: #f38181;
+    text-transform: uppercase;
+}
+
+.map_title:after{
+    display: block;
+    content: "";
+    background-color: #f38181;
+    width: 60px;
+    height: 3px;
+    margin: 15px auto 0;
+}
+
+.map_title a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.map_title a:hover{
+    text-decoration: underline;
+}
+
