@@ -907,22 +907,36 @@ hr{
 .subscribe{
     width: 100px;
     max-width: 380px;
+    display: flex;
 }
 
 .subscribe_input{
     background: #fff;
     border: 1px solid #e7e7e7;
     font-size: 15px;
+    height: 40px;
     font-style: italic;
     font-weight: 300;
-    color: #ccc;
+    color: #333;
     padding: 12px;
     font-family: "Montserrat", sans-serif;
+    line-height: 1.1;
 }
 
+.subscribe_input::placeholder{
+    color: #ccc;
+}
 
-
-
-
-
-
+.subscribe_button{
+    height: 40px;
+    font-family: "Montserrat", sans-serif;
+    background-color: #95e1d3;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    line-height: 1.1;
+}
