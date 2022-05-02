@@ -856,6 +856,20 @@ hr{
 
 .footer_inner{
     padding-bottom: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_col-first{
+    width: 40%;
+}
+
+.footer_col-second{
+    width: 30%;
+}
+
+.footer_col-third{
+    width: 22%;
 }
 
 .footer_logo{
@@ -902,10 +916,17 @@ hr{
     color: #95e1d3;
 }
 
+.footer_title{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #333;
+    margin: 30px 0;
+}
+
 /*Subscribe*/
 
 .subscribe{
-    width: 100px;
+    width: 100%;
     max-width: 380px;
     display: flex;
 }
@@ -913,6 +934,7 @@ hr{
 .subscribe_input{
     background: #fff;
     border: 1px solid #e7e7e7;
+    border-right: 0;
     font-size: 15px;
     height: 40px;
     font-style: italic;
@@ -921,6 +943,12 @@ hr{
     padding: 12px;
     font-family: "Montserrat", sans-serif;
     line-height: 1.1;
+    width: 60%;
+}
+
+.subscribe_input:focus{
+    outline: 0;
+    border-color: #95e1d3;
 }
 
 .subscribe_input::placeholder{
@@ -939,4 +967,13 @@ hr{
     text-transform: uppercase;
     padding: 12px 30px;
     line-height: 1.1;
+    width: 40%;
+    transition: background .2s linear;
 }
+
+.subscribe_button:hover{
+    background: #74c7b8;
+}
+
+
+
