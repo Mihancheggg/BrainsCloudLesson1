@@ -44,6 +44,8 @@ hr {
 .intro {
     width: 100%;
     height: 100vh;
+    min-height: 820px;
+    position: relative;
     background: url(assets/intro.jpg) center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
@@ -91,7 +93,18 @@ hr {
     left: 0;
     right: 0;
     z-index: 1000;
-    padding-top: 30px;
+    padding-top: 10px;
+}
+
+.header-fixed {
+    padding: 10px 0;
+    background-color: #eb8b8d;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+    transform: translate3d(0, 0, 0);
 }
 
 .header_inner {
@@ -147,7 +160,48 @@ hr {
 
 .nav_link.active {
     color: #fce38a;
+}
 
+/* Nav-toggle */
+.nav-toggle {
+    position: absolute;
+    padding: 10px 0;
+    top: 24px;
+    right: 24px;
+    z-index: 1;
+    width: 30px;
+}
+
+.nav-toggle_item {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.nav-toggle_item:before,
+.nav-toggle_item:after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+.nav-toggle_item:before {
+    top: -8px;
+}
+
+.nav-toggle_item:after {
+    bottom: -8px;
 }
 
 /* Button */
@@ -908,7 +962,7 @@ hr {
     justify-content: space-between;
 }
 
-.footer{
+.footer {
     padding: 0 15px;
 }
 
@@ -1193,11 +1247,11 @@ hr {
         width: 50%;
     }
 
-    .instagram{
+    .instagram {
         justify-content: flex-start;
     }
 
-    .instagram_item{
+    .instagram_item {
         width: auto;
         border-right: 1px solid white;
     }
@@ -1206,6 +1260,16 @@ hr {
 
 
 @media screen and (max-width: 770px ) {
+
+    /*Intro*/
+    .intro {
+        min-height: 650px;
+    }
+
+    /* Header */
+    .header {
+        padding-top: 10px;
+    }
 
     /*Nav*/
     .nav {
@@ -1315,7 +1379,7 @@ hr {
     }
 
     /*Blog*/
-    .footer_col-second, .footer_col-third{
+    .footer_col-second, .footer_col-third {
         width: 100%;
     }
 }
@@ -1416,27 +1480,27 @@ hr {
         margin: 15px auto;
     }
 
-    .subscribe{
+    .subscribe {
         flex-wrap: wrap;
         max-width: none;
     }
 
-    .subscribe_input{
+    .subscribe_input {
         width: 100%;
         border-right: 1px solid #e7e7e7;
         margin-bottom: 10px;
     }
 
-    .subscribe_button{
+    .subscribe_button {
         width: 100%;
     }
 
-    .blogs_img{
+    .blogs_img {
         width: 80px;
         height: 50px;
     }
 
-    .blogs_title{
+    .blogs_title {
         font-size: 10px;
     }
 }
